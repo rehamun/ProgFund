@@ -12,7 +12,65 @@ import java.util.*;
 public class PlayStore {
     //Student to do: Add the necessary attributes and methods
     
+	// Class A.1
+	static class Content extends PlayStore
+	{
+		int ID;
+		String appName;
+		int downCount;
+		double price;
+		String review;
+	}
+	
+	// Class A.2
+	static class Reading extends Content
+	{
+		String publisher;
+		String genre;
+		int pageNo;
+	}
+	
+	// Class A.3
+	class Book extends Reading
+	{
+		String authorName;
+	}
+	
+	// Class A.4
+	class Magazine extends Reading
+	{
+		String title;
+	}
     
+	
+	// Class B
+	class Comment
+	{
+		String u1 = new UserName; //link to class D
+		Comment cmnt = new Comment(u1, "This is a fantastic game"); // pulled from assignment task sheet
+	}
+	
+	
+	// Class C
+	class OS
+	{
+		String OS;
+		int version;
+		
+		OS os1 = new OS("Android", 4); // pulled from assignment task sheet
+	}
+	
+	// Class D
+	public class user(OS, version)
+	{
+		int ID;
+		String UserName;
+		String phoneNo;
+		double balance;
+		
+	}
+	
+	// Class E	
     public static void main(String[] args)
     {   
         PlayStore admin = new PlayStore();
